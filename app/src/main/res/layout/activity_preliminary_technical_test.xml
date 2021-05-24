@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".miniproject.MiniProjectActivity">
+
+    <LinearLayout
+        android:id="@+id/text_preliminary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_task_preliminary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:text="@string/task"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:padding="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_answer_preliminary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:background="@drawable/custom_button"
+            app:layout_constraintStart_toEndOf="@id/btn_task_preliminary"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_55_55_55"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserratblack"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_title_lorem_ipsum_dolor_sit_amet_consectetur"
+        android:fontFamily="@font/montserratblack"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_preliminary"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_run_code"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:text="@string/run_code"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:layout_marginEnd="200dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit_preliminary"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
