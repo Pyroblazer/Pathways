@@ -5,24 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".company.CompanyUserProfileFragment">
+    tools:context=".ui.job.JobDescriptionCompanyFragment">
 
     <LinearLayout
         android:id="@+id/ll_company_user_profile"
         android:layout_width="990dp"
-        android:layout_height="150dp"
+        android:layout_height="180dp"
         android:layout_margin="50dp"
         android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:background="@drawable/custom_btn"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/img_company_user_profile"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_margin="10dp" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/button_grey" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,33 +34,61 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/id_job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/montserratblack"
-                android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
+                android:text="Data Scientist"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="35sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/id_company_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/montserrat"
-                android:text="@string/lorem_ipsum"
+                android:text="Company Name"
                 android:textColor="@color/white"
-                android:textSize="15sp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_company_lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Jakarta, Indonesia"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_company_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="8,000,000.00 - 12,000,000.00 IDR/month"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/layout"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:layout_margin="50dp"
         android:layout_marginEnd="60dp"
         android:background="@drawable/custom_btn"
@@ -64,11 +96,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:background="@drawable/ic_baseline_mail_24" />
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserratblack"
+            android:background="@drawable/custom_btn"
+            />
     </RelativeLayout>
 
     <LinearLayout
@@ -91,7 +130,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Experience"
+                android:text="Job Description"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserratblack"
                 android:textSize="35sp"
@@ -108,7 +147,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Interest"
+                android:text="Tasks"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserratblack"
                 android:textSize="35sp"
@@ -125,7 +164,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Completed Task"
+                android:text="Qualified People"
                 android:textStyle="bold"
                 android:fontFamily="@font/montserratblack"
                 android:textSize="35sp"
@@ -144,25 +183,33 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="60dp">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/custom_item_list">
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-
-            <androidx.recyclerview.widget.RecyclerView
+            <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:listitem="@layout/item_list_experience">
-            </androidx.recyclerview.widget.RecyclerView>
-        </ScrollView>
-    </LinearLayout>
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/id_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tv_desc"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    />
+            </ScrollView>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -175,12 +222,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                    tools:listitem="@layout/item_list_interest">
-                </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/item_list_tasks">
+            </androidx.recyclerview.widget.RecyclerView>
             </ScrollView>
         </LinearLayout>
 
@@ -199,7 +246,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                    tools:listitem="@layout/item_list_completed_task">
+                    tools:listitem="@layout/item_list_qualified_people">
                 </androidx.recyclerview.widget.RecyclerView>
             </ScrollView>
         </LinearLayout>

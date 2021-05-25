@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.EditExperienceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserratblack"
+                android:text="Edit Experience"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_back"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="280dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/montserratblack"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_save"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/custom_btn"
+                android:fontFamily="@font/montserratblack"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp" />
+
+            <EditText
+                android:id="@+id/id_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="400dp"
+                android:background="@drawable/custom_input"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/relative_one">
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp" />
+
+            <EditText
+                android:id="@+id/et_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="400dp"
+                android:background="@drawable/custom_input"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/relative_two">
+
+            <TextView
+                android:id="@+id/st_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp" />
+
+            <EditText
+                android:id="@+id/id_st_date"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="November"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="400dp"
+                android:background="@drawable/custom_input"
+                />
+
+            <EditText
+                android:id="@+id/id_st_date_tahun"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="2020"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/id_st_date"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/custom_input"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/relative_three">
+
+            <TextView
+                android:id="@+id/ed_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp" />
+
+            <EditText
+                android:id="@+id/id_ed_date"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="November"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="400dp"
+                android:background="@drawable/custom_input"
+                />
+
+            <EditText
+                android:id="@+id/id_ed_date_tahun"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="2020"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/id_ed_date"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/custom_input"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/relative_four">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Description"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/id_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tv_desc"
+                android:background="@drawable/custom_input"
+                />
+
+        </RelativeLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

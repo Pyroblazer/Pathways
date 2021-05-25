@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".company.CompanyUserProfileFragment">
+    tools:context=".ui.profile.UserUserProfileFragment">
 
     <LinearLayout
         android:id="@+id/ll_company_user_profile"
@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/layout"
+        android:id="@+id/linearLayout"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="50dp"
@@ -64,11 +64,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:background="@drawable/ic_baseline_mail_24" />
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserratblack"
+            android:background="@drawable/custom_btn"
+            />
     </RelativeLayout>
 
     <LinearLayout
@@ -144,25 +151,25 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="60dp">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-
-            <androidx.recyclerview.widget.RecyclerView
+            <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:listitem="@layout/item_list_experience">
-            </androidx.recyclerview.widget.RecyclerView>
-        </ScrollView>
-    </LinearLayout>
+                android:layout_gravity="center_horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:listitem="@layout/item_list_experience">
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"

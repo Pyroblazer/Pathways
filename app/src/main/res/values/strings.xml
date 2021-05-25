@@ -62,5 +62,22 @@
     <string name="data_camp">Data Camp</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a venenatis diam. Curabitur vehicula dictum euismod. Etiam eget nisi in orci vulputate eleifend. Aenean tincidunt, ligula sit amet ullamcorper faucibus, metus felis dignissim est, ut posuere tortor risus vitae augue. Quisque leo odio, placerat id euismod non, efficitur quis odio. Duis vitae risus mattis, lacinia leo vitae, mollis nibh. Nam aliquam finibus mauris, sit amet rutrum eros interdum at. Donec lobortis malesuada tellus, sed efficitur ipsum rhoncus sit amet.</string>
     <string name="john_doe_lorem_ipsum_dolor_sit_amet">John Doe Lorem ipsum dolor sit amet</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="Task_Type" >
+        <item>Tecnical Mini-Project</item>
+        <item>Tecnical Quiz</item>
+        <item>Behavioral Video Test</item>
+    </string-array>
 
 </resources>

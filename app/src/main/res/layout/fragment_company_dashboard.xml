@@ -33,12 +33,21 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/custom_item_list">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
                 tools:listitem="@layout/item_list_recommended_people">
-        </androidx.recyclerview.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+
     </LinearLayout>
 
     <TextView
@@ -87,13 +96,23 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/custom_item_list">
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             tools:listitem="@layout/item_list_job_openings">
         </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
     </LinearLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
