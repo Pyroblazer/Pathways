@@ -86,11 +86,11 @@ class EditProfileActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
         if (requestCode == CAMERA_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            val bitmap = data?.extras?.get("data") as Bitmap
-            binding.idPp.setImageBitmap(bitmap)
+            val bitmapPp = data?.extras?.get("data") as Bitmap
+            binding.idPp.setImageBitmap(bitmapPp)
         } else if(requestCode == REQUEST_CAMERA && resultCode == Activity.RESULT_OK){
-            val bitMap = data?.extras?.get("data") as Bitmap
-            binding.idId.setImageBitmap(bitMap)
+            val bitmapId = data?.extras?.get("data") as Bitmap
+            binding.idId.setImageBitmap(bitmapId)
         } else {
             super.onActivityResult(requestCode, resultCode, data)
         }
