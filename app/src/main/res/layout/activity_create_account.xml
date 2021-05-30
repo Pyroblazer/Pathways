@@ -47,27 +47,29 @@
 
     <EditText
         android:id="@+id/edt_email"
+        style="@style/Widget.AppCompat.EditText"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:hint="@string/email"
-        app:layout_constraintTop_toBottomOf="@id/edt_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Widget.AppCompat.EditText"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
         android:paddingTop="3dp"
-        android:padding="15dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_name" />
 
     <EditText
         android:id="@+id/edt_password"
+        style="@style/Widget.AppCompat.EditText"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:hint="@string/password"
-        app:layout_constraintTop_toBottomOf="@id/edt_email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Widget.AppCompat.EditText"
+        android:inputType="textPassword"
+        android:padding="15dp"
         android:paddingTop="3dp"
-        android:padding="15dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_email" />
 
     <EditText
         android:id="@+id/edt_reenter_password"
@@ -97,7 +99,9 @@
         android:id="@+id/btn_create_account"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:text="@string/have_an_account"
+        android:text="Create Account"
+        android:fontFamily="@font/montserratblack"
+        android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/cb_looking_to_hire"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,6 +116,8 @@
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:text="@string/have_an_account"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintTop_toBottomOf="@id/btn_create_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

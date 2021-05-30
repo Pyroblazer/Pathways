@@ -74,7 +74,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <string-array name="Task_Type" >
+    <string-array name="Task_Type">
         <item>Tecnical Mini-Project</item>
         <item>Tecnical Quiz</item>
         <item>Behavioral Video Test</item>

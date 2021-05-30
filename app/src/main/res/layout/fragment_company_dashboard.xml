@@ -27,7 +27,6 @@
         android:layout_height="650dp"
         app:layout_constraintTop_toBottomOf="@id/tv_recommended_people"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toOf="parent"
         android:layout_marginStart="150dp"
         android:layout_marginBottom="50dp"
         android:layout_marginTop="20dp"
@@ -80,7 +79,6 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="tv"
         app:layout_constraintBottom_toTopOf="@id/rv_job_openings"
         android:layout_marginStart="80dp"/>
 
@@ -90,7 +88,6 @@
         android:layout_height="650dp"
         app:layout_constraintTop_toBottomOf="@id/tv_recommended_people"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toOf="parent"
         android:layout_marginBottom="50dp"
         android:layout_marginEnd="150dp"
         android:layout_marginTop="20dp"
@@ -107,12 +104,7 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             tools:listitem="@layout/item_list_job_openings">
         </androidx.recyclerview.widget.RecyclerView>
-
         </ScrollView>
     </LinearLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

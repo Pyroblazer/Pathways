@@ -34,7 +34,7 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginStart="480dp"
+                android:layout_marginStart="485dp"
                 android:background="@drawable/custom_button"
                 android:fontFamily="@font/montserratblack"
                 android:text="Back"

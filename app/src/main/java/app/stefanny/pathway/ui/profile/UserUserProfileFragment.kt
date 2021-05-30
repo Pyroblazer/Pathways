@@ -8,12 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import app.stefanny.pathway.databinding.FragmentGalleryBinding
+import app.stefanny.pathway.databinding.FragmentUserUserProfileBinding
 
 class UserUserProfileFragment : Fragment() {
 
     private lateinit var userUserProfileViewModel: UserUserProfileViewModel
-    private var _binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentUserUserProfileBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,17 +23,13 @@ class UserUserProfileFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         userUserProfileViewModel =
             ViewModelProvider(this).get(UserUserProfileViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentUserUserProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        userUserProfileViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 

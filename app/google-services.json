@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953358162311",
+    "project_id": "pathwayauthenticate",
+    "storage_bucket": "pathwayauthenticate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953358162311:android:a6bea53b25c614aed21b22",
+        "android_client_info": {
+          "package_name": "app.stefanny.pathway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953358162311-gfo10ji8194ak40u9eaus9jfka2d0anp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-N9gUX-bYc4XOHGhlCxmY2tT7QD5mPE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953358162311-gfo10ji8194ak40u9eaus9jfka2d0anp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
