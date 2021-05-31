@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.job.EditCompanyJobDescriptionFragment">
+    tools:context=".ui.job.EditJobDescriptionCompany">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Job Title"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
@@ -82,11 +82,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
-                android:layout_marginStart="400dp"
+                android:layout_marginStart="350dp"
                 android:background="@drawable/custom_input"
 
                 />
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Company"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
@@ -115,11 +115,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
-                android:layout_marginStart="400dp"
+                android:layout_marginStart="350dp"
                 android:background="@drawable/custom_input"
                 />
 
@@ -138,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Location"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
@@ -149,11 +149,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
-                android:layout_marginStart="400dp"
+                android:layout_marginStart="350dp"
                 android:background="@drawable/custom_input"
                 />
         </RelativeLayout>
@@ -171,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Salary"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
@@ -182,11 +182,11 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:text="8.000.000,00"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
-                android:layout_marginStart="400dp"
+                android:layout_marginStart="350dp"
                 android:background="@drawable/custom_input"
                 />
 
@@ -201,7 +201,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:text="12.000.000,00"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
@@ -229,7 +229,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Job Description"
-                    android:textSize="40sp"
+                    android:textSize="30sp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/montserrat"
                     android:textStyle="bold"
@@ -240,7 +240,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem_ipsum"
-                    android:textSize="20sp"
+                    android:textSize="30sp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/montserrat"
                     android:textStyle="bold"
