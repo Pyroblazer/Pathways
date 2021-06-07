@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import app.stefanny.pathway.databinding.ActivityLoginBinding
+import app.stefanny.pathway.user.UserDashboard
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
@@ -49,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
         firebaseAuth.signInWithEmailAndPassword(email, pass)
             .addOnCompleteListener(this) {
                 if (it.isSuccessful) {
-                    Intent(this, MainMenu::class.java).also {
+                    Intent(this, UserDashboard::class.java).also {
                         it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(it)
                     }
@@ -62,7 +63,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (firebaseAuth.currentUser != null) {
-            Intent(this, MainMenu::class.java).also {
+            Intent(this, UserDashboard::class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(it)
             }

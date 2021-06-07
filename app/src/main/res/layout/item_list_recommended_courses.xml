@@ -9,17 +9,18 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_recommended_people"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF909090" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/courses"/>
 
 
     <TextView
-        android:id="@+id/txt_job_openings"
+        android:id="@+id/txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
         android:layout_toEndOf="@+id/img_recommended_people"
         android:text="@string/python_programming"
         android:fontFamily="@font/montserratblack"
@@ -28,12 +29,12 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/txt_company_name"
+        android:id="@+id/txt_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_job_openings"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="2dp"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
         android:layout_toEndOf="@id/img_recommended_people"
         android:ellipsize="end"
         android:maxLines="3"
@@ -43,18 +44,6 @@
         android:textSize="18sp"
         android:fontFamily="@font/montserrat"/>
 
-    <TextView
-        android:id="@+id/txt_company_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_company_name"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="2dp"
-        android:layout_toEndOf="@id/img_recommended_people"
-        android:ellipsize="end"
-        android:maxLines="3"
-        android:text="@string/lorem_ipsum"
-        android:textColor="@color/black"
-        android:fontFamily="@font/montserrat"/>
+
 
 </RelativeLayout>

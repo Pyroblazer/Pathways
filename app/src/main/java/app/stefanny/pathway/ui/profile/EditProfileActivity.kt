@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import app.stefanny.pathway.databinding.ActivityEditProfileBinding
+import app.stefanny.pathway.user.UserProfile
 
 class EditProfileActivity : AppCompatActivity() {
 
@@ -61,6 +62,26 @@ class EditProfileActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, CAMERA_REQUEST_CODE)
+        }
+
+        binding.btnAdd.setOnClickListener {
+            val intent = Intent(this, AddExperience::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnEdit.setOnClickListener {
+            val intent = Intent(this, EditExperience::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnUserProfile.setOnClickListener {
+            val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
+        }
+
+        binding.idBack.setOnClickListener {
+            val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
         }
     }
 
