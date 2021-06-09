@@ -1,0 +1,60 @@
+VM operations API
+Inputs and Outputs are in form of JSON strings
+It operates on http://35.223.231.127:5000
+
+http://35.223.231.127:5000/vm/initialize
+
+input
+{
+}
+
+output
+{
+    "codeServerAddress":
+    "vmInstance":
+}
+"codeServerAddress": address of hosted code-server
+"vmInstance": JSON information of created VM instance
+
+http://35.223.231.127:5000/vm/delayed_shutdown
+
+input
+{
+    "name": "technical-mini-project-4007909762"
+    "duration": 60
+}
+
+"name": string name of VM instance
+"duration": int time in seconds
+
+output
+{
+    "message": "Accepted"
+}
+
+http://35.223.231.127:5000/vm/shutdown
+
+input
+{
+    "name": "technical-mini-project-4007909762"
+}
+"name": string name of VM instance
+
+output
+{
+    "vmInstance":
+    "reservedAddress":
+}
+"vmInstance": JSON information of deleted VM instance
+"reservedAddress": JSON information of deleted reserved address
+
+http://35.223.231.127:5000/ml/jobRecommender
+input
+{
+    "text" : "A data analyst is someone who scrutinises information using data analysis tools. The meaningful results they pull from the raw data help their employers or clients make important decisions by identifying various facts and trends. Typical duties include: using advanced computerised models to extract the data needed."
+}
+
+output
+{
+    "job : "Business Analyst"
+}
