@@ -15,7 +15,7 @@ class WelcomePage : AppCompatActivity() {
         binding = ActivityWelcomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnSignup.setOnClickListener {
+        binding.btnStarted.setOnClickListener {
             val intent = Intent(this, CreateAccountActivity::class.java)
             startActivity(intent)
         }

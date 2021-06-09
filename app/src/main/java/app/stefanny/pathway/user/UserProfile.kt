@@ -35,7 +35,6 @@ class UserProfile : AppCompatActivity() {
     companion object {
         private const val TAG = "UserProfile"
         private const val USERNAME = "test_user_general"
-        const val EXTRA_DATA = "extra_data"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

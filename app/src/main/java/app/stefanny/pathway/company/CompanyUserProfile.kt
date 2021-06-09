@@ -135,7 +135,7 @@ class CompanyUserProfile : AppCompatActivity() {
                     if (it != null) {
                         listCompletedTask.addAll(it)
                     }
-                    binding.rvExperience.adapter = adapterExperience
+                    binding.rvCompletedTask.adapter = adapterCompletedTask
                 }
             }
 

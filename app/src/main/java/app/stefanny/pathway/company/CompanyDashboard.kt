@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
+import app.stefanny.pathway.adapter.JobProfileAdapter
 import app.stefanny.pathway.adapter.RecommendedPeopleAdapter
 import app.stefanny.pathway.databinding.ActivityCompanyDashboardBinding
 import app.stefanny.pathway.response.JobOpeningResponse
@@ -20,7 +21,7 @@ import retrofit2.Response
 class CompanyDashboard : AppCompatActivity() {
 
     private lateinit var binding: ActivityCompanyDashboardBinding
-    private lateinit var adapterJob: UserDashboardAdapter
+    private lateinit var adapterJob: JobProfileAdapter
     private lateinit var adapterPeople: RecommendedPeopleAdapter
     private val listJob = ArrayList<JobOpeningResponse>()
     private val listPeople = ArrayList<UserGeneralAppliesJobOpeningResponse>()
@@ -31,7 +32,7 @@ class CompanyDashboard : AppCompatActivity() {
         binding = ActivityCompanyDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        adapterJob = UserDashboardAdapter(listJob)
+        adapterJob = JobProfileAdapter(listJob)
         adapterPeople = RecommendedPeopleAdapter(listPeople)
 
         viewConfigJob()

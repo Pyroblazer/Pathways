@@ -37,6 +37,7 @@ class JobDescriptionCompany : AppCompatActivity() {
         private const val TAG = "JobDescriptionCompany"
         private const val JOB_ID = "1"
         private const val USERNAME = "test_user_general"
+        const val EXTRA_JOB = "extra_job"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -16,8 +16,6 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".ResultActivity"></activity>
         <activity android:name=".ui.job.AddJobOpeningCompany" />
-        <activity android:name=".SplashScreenActivity" />
-        <activity android:name=".WelcomePage" />
         <activity android:name=".company.CompanyUserProfile" />
         <activity android:name=".ui.profile.AddExperience" />
         <activity android:name=".ui.profile.EditExperience" />
@@ -25,7 +23,6 @@
         <activity android:name=".ui.job.AddTaskJobDescriptionCompany" />
         <activity android:name=".ui.job.EditJobDescriptionCompany" />
         <activity android:name=".ui.job.EditTaskJobDescriptionCompany" />
-        <activity android:name=".company.CompanyDashboard" />
         <activity android:name=".ui.job.JobDescriptionCompany" />
         <activity android:name=".InterviewTestActivity" />
         <activity android:name=".preliminary.PreliminaryTechnicalTest" />
@@ -36,11 +33,14 @@
         <activity android:name=".FirstActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ThirdActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".user.UserDashboard" />
+        <activity android:name=".company.CompanyDashboard" />
         <activity
             android:name=".CreateAccountActivity"
             android:theme="@style/Theme.Pathway.NoActionBar"/>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".user.UserDashboard" >
+        <activity android:name=".WelcomePage" />
+        <activity android:name=".SplashScreenActivity" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

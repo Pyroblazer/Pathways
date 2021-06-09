@@ -1,6 +1,7 @@
 package app.stefanny.pathway
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,7 @@ import app.stefanny.pathway.api.ApiConfigVM
 import app.stefanny.pathway.databinding.ActivityThirdBinding
 import app.stefanny.pathway.request.JobRecommenderRequest
 import app.stefanny.pathway.response.JobRecommenderResponse
+import app.stefanny.pathway.user.UserDashboard
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -50,6 +52,12 @@ class ThirdActivity : AppCompatActivity() {
         val btnBack = dialog.findViewById<Button>(R.id.btn_back_result)
         btnBack.setOnClickListener {
             dialog.dismiss()
+        }
+
+        val btnNext = dialog.findViewById<Button>(R.id.btn_next_result)
+        btnNext.setOnClickListener {
+            val intent = Intent(this, UserDashboard::class.java)
+            startActivity(intent)
         }
 
         val jobs = dialog.findViewById<TextView>(R.id.id_pathway)
