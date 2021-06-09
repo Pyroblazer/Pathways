@@ -204,7 +204,7 @@
                 android:layout_marginStart="60dp" />
 
             <EditText
-                android:id="@+id/id_salary_min"
+                android:id="@+id/id_salary"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:hint="8.000.000,00"
@@ -216,25 +216,6 @@
                 android:background="@drawable/custom_input"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/id_salary_min"
-                android:drawableRight="@drawable/ic_until" />
-
-            <EditText
-                android:id="@+id/id_salary_max"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:hint="12.000.000,00"
-                android:textSize="30sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/montserrat"
-                android:textStyle="bold"
-                android:layout_toRightOf="@id/id_salary_min"
-                android:layout_marginStart="50dp"
-                android:background="@drawable/custom_input"
-                />
         </RelativeLayout>
 
         <ScrollView

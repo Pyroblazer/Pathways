@@ -104,7 +104,7 @@
                 android:layout_marginStart="60dp" />
 
             <EditText
-                android:id="@+id/id_company"
+                android:id="@+id/id_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
@@ -139,7 +139,7 @@
                 android:layout_marginStart="60dp" />
 
             <EditText
-                android:id="@+id/et_company"
+                android:id="@+id/id_company"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"

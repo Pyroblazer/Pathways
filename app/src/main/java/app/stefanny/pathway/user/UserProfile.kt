@@ -138,7 +138,7 @@ class UserProfile : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<ArrayList<CompletedTaskResponseItem>>, t: Throwable) {
-                //    Log.e(UserProfile.TAG, "onFailure: ${t.message.toString()}")
+                    Log.e(TAG, "onFailure: ${t.message.toString()}")
             }
         })
     }

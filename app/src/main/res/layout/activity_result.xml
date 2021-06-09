@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1150dp"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+    android:background="#808080"
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your learning pathway is"
+        android:textSize="65sp"
+        android:fontFamily="@font/montserratblack"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/id_pathway"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:text="Learning Pathway"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserratblack"
+        app:layout_constraintTop_toBottomOf="@id/tv_one"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/custom_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="25sp"
+        android:fontFamily="@font/montserratblack"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/id_pathway"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_btn"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintTop_toBottomOf="@id/btn_next_result"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

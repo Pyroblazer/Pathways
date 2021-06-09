@@ -43,6 +43,11 @@ class AddJobOpeningCompany : AppCompatActivity() {
             val intent = Intent(this, CompanyDashboard::class.java)
             startActivity(intent)
         }
+
+        binding.btnAdd.setOnClickListener {
+            val intent = Intent(this, AddTaskJobDescriptionCompany::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun createNewJob(){

@@ -3,17 +3,13 @@ package app.stefanny.pathway
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextWatcher
 import android.util.Log
 import android.util.Patterns
-import android.widget.Toast
 import app.stefanny.pathway.api.ApiConfig
 import app.stefanny.pathway.company.CompanyDashboard
 import app.stefanny.pathway.databinding.ActivityCreateAccountBinding
-import app.stefanny.pathway.response.AllUsersResponseItem
-import app.stefanny.pathway.ui.job.AddJobOpeningCompany
-import app.stefanny.pathway.user.UserDashboard
-import com.google.firebase.auth.FirebaseAuth
+import app.stefanny.pathway.request.UserRequest
+import app.stefanny.pathway.response.AllUsersResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -44,7 +40,6 @@ class CreateAccountActivity : AppCompatActivity() {
             val email = binding.edtEmail.text.toString().trim()
             val pass = binding.edtPassword.text.toString().trim()
             val repass = binding.edtReenterPassword.text.toString().trim()
-            val typeOfUser = binding.typeUser.text.toString().trim()
 
             if (username.isEmpty()) {
                 binding.edtUsername.error = "Username can't be empty"
@@ -68,31 +63,56 @@ class CreateAccountActivity : AppCompatActivity() {
                 binding.edtReenterPassword.error = "Password is not valid"
             }
 
+            register()
+
+            var userType = "GENERAL"
             binding.typeUser.setOnCheckedChangeListener { typeUser, isChecked ->
                 if (isChecked) {
-                    val company = Intent(this, CompanyDashboard::class.java)
-                    startActivity(company)
+                    userType = "COMPANY"
                 } else {
-                    val user = Intent(this, UserDashboard::class.java)
-                    startActivity(user)
+                    userType = "GENERAL"
                 }
             }
+            if (userType == "GENERAL") {
+                val company = Intent(this@CreateAccountActivity, FirstActivity::class.java)
+                startActivity(company)
 
-            ApiConfig.getApiService().register(username, email, pass, typeOfUser).enqueue(object : Callback<AllUsersResponseItem> {
-                override fun onResponse(
-                    call: Call<AllUsersResponseItem>,
-                    response: Response<AllUsersResponseItem>
-                ) {
-                    Log.d(TAG, "success input")
+            }
 
-                }
 
-                override fun onFailure(call: Call<AllUsersResponseItem>, t: Throwable) {
-                    Log.d(TAG, "input failed")
-                }
-            })
         }
 
+    }
+
+    fun register() {
+
+        var userType = "COMPANY"
+        val userRequest = UserRequest()
+        userRequest.username = binding.edtUsername.text.toString().trim()
+        userRequest.email = binding.edtEmail.text.toString().trim()
+        userRequest.userPassword = binding.edtPassword.text.toString().trim()
+        userRequest.typeOfUser = userType
+
+        ApiConfig.getApiService().register(userRequest).enqueue(object : Callback<AllUsersResponse> {
+            override fun onResponse(
+                call: Call<AllUsersResponse>,
+                response: Response<AllUsersResponse>
+            ) {
+                if (userType == "GENERAL") {
+                    val company = Intent(this@CreateAccountActivity, FirstActivity::class.java)
+                    startActivity(company)
+
+                } else {
+                    val intent = Intent(this@CreateAccountActivity, CompanyDashboard::class.java)
+                    startActivity(intent)
+                }
+
+            }
+
+            override fun onFailure(call: Call<AllUsersResponse>, t: Throwable) {
+                Log.d(TAG, "input failed")
+            }
+        })
     }
 
 }

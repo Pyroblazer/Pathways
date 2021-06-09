@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pathway"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.job.AddJobOpeningCompany"></activity>
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ui.job.AddJobOpeningCompany" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".WelcomePage" />
         <activity android:name=".user.UserDashboard" />
@@ -32,13 +33,15 @@
         <activity android:name=".miniproject.MiniProjectActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ui.profile.EditProfileActivity" />
-        <activity android:name=".ThirdActivity" />
+        <activity android:name=".ui.job.JobDescriptionUser" />
         <activity android:name=".BeginActivity" />
         <activity android:name=".FirstActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".ui.job.JobDescriptionUser"
+        <activity android:name=".ThirdActivity" />
+        <activity
+            android:name=".CreateAccountActivity"
             android:theme="@style/Theme.Pathway.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

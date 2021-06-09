@@ -1,5 +1,8 @@
 package app.stefanny.pathway.api
 
+import app.stefanny.pathway.request.JobRecommenderRequest
+import app.stefanny.pathway.request.LoginRequest
+import app.stefanny.pathway.request.UserRequest
 import app.stefanny.pathway.response.*
 import retrofit2.Call
 import retrofit2.http.*
@@ -32,18 +35,13 @@ interface ApiService {
 
     @POST("api/all_users/insert/")
     fun register(
-        @Field("username") username: String,
-        @Field("email") email: String,
-        @Field("type_of_user") typeOfUser: String,
-        @Field("user_password") password: String
-    ): Call<AllUsersResponseItem>
+        @Body userRequest: UserRequest
+    ): Call<AllUsersResponse>
 
-    @POST("api/all_users/insert/")
+    @GET("api/all_users/insert/")
     fun login(
-        @Field("username") username: String,
-        @Field("email") email: String,
-        @Field("type_of_user") typeOfUser: String,
-    ): Call<AllUsersResponseItem>
+        @Body loginRequest: LoginRequest
+    ): Call<AllUsersResponse>
 
     @FormUrlEncoded
     @POST("api/job_opening/insert/")
@@ -56,4 +54,41 @@ interface ApiService {
         @Field("title") title: String?,
         @Field("salary") salary: String?
     ) : Call<JobOpeningResponse>
+
+    @FormUrlEncoded
+    @POST("api/experience/insert/")
+    fun postUserExperience(
+        @Field("order_no") orderNo: String,
+        @Field("username") username: String,
+        @Field("position") position: String,
+        @Field("company_name") companyName: String,
+        @Field("start_date") startDate: String,
+        @Field("end_date") endDate: String,
+        @Field("position_description") positionDescription: String
+    ) : Call<UserProfileExperienceResponse>
+
+    @FormUrlEncoded
+    @POST("api/user_general/insert/")
+    fun postEditProfile(
+        @Field("short_description") shortDescription: String,
+        @Field("interest_job") interestJob: String,
+        @Field("profile_picture") profilePicture: String,
+        @Field("interest_subject") interestSubject: String,
+        @Field("username") username: String
+    ) : Call<UserGeneralResponse>
+
+    @FormUrlEncoded
+    @POST("api/challenges/list")
+    fun postJobTask(
+        @Field("order_number") orderNumber: String,
+        @Field("job_opening_id") jobOpeningId: String,
+        @Field("task_title") taskTitle: String,
+        @Field("task_type") taskType: String,
+        @Field("data_related") dataRelated: String
+    ) : Call<JobTaskResponse>
+
+    @POST("ml/jobRecommender")
+    fun jobRecommender(
+        @Body jobRecommenderRequest: JobRecommenderRequest
+    ): Call<JobRecommenderResponse>
 }

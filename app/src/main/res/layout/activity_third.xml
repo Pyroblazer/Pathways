@@ -23,7 +23,9 @@
     <EditText
         android:id="@+id/edt_introduce"
         android:layout_width="1200dp"
-        android:layout_height="550dp"
+        android:layout_height="500dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
         tools:text="@tools:sample/lorem/random"
         android:fontFamily="@font/montserrat"
         android:textColor="@color/black"
