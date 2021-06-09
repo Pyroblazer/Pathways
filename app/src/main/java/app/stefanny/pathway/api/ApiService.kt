@@ -38,7 +38,7 @@ interface ApiService {
         @Body userRequest: UserRequest
     ): Call<AllUsersResponse>
 
-    @GET("api/all_users/insert/")
+    @POST("api/all_users/insert/")
     fun login(
         @Body loginRequest: LoginRequest
     ): Call<AllUsersResponse>

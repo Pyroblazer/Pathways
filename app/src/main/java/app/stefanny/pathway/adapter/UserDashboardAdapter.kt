@@ -1,11 +1,13 @@
 package app.stefanny.pathway.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import app.stefanny.pathway.databinding.ItemListJobOpeningsBinding
 import app.stefanny.pathway.response.JobOpeningResponse
+import app.stefanny.pathway.ui.job.JobDescriptionUser
 
 class UserDashboardAdapter(private val list : ArrayList<JobOpeningResponse>) : RecyclerView.Adapter<UserDashboardAdapter.ListViewHolder>() {
 
@@ -20,6 +22,11 @@ class UserDashboardAdapter(private val list : ArrayList<JobOpeningResponse>) : R
                 txtCompanyName.text = job.company
                 txtCompanyLocation.text = job.location
                 txtCompanyPaycheck.text = job.salary
+                itemView.setOnClickListener {
+                    val intent = Intent(itemView.context, JobDescriptionUser::class.java)
+                    intent.putExtra(JobDescriptionUser.EXTRA_DATA, job.id)
+                    itemView.context.startActivity(intent)
+                }
             }
         }
 
