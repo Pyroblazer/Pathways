@@ -106,7 +106,7 @@
                 android:id="@+id/id_task"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
+                android:hint="@string/john_doe_lorem_ipsum_dolor_sit_amet"
                 android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
@@ -138,14 +138,14 @@
                 android:textStyle="bold"
                 android:layout_marginStart="60dp" />
 
-            <Spinner
+            <EditText
                 android:id="@+id/sp_type"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Technical Mini-Project"
+                android:hint="Technical Mini-Project"
                 android:entries="@array/Task_Type"
                 android:spinnerMode="dropdown"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
@@ -180,7 +180,7 @@
                 android:id="@+id/id_duration"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:text="90"
+                android:hint="90"
                 android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
@@ -226,26 +226,12 @@
                 android:id="@+id/id_ed_date"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:text="November"
+                android:hint="November"
                 android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
                 android:layout_marginStart="300dp"
-                android:background="@drawable/custom_input"
-                />
-
-            <EditText
-                android:id="@+id/id_ed_date_tahun"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:text="2020"
-                android:textSize="30sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/montserrat"
-                android:textStyle="bold"
-                android:layout_toRightOf="@id/id_ed_date"
-                android:layout_marginStart="40dp"
                 android:background="@drawable/custom_input"
                 />
         </RelativeLayout>
@@ -270,11 +256,11 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/id_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/lorem_ipsum"
+                android:hint="@string/lorem_ipsum"
                 android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat"

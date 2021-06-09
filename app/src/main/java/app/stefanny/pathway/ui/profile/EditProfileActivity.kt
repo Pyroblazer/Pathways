@@ -144,7 +144,7 @@ class EditProfileActivity : AppCompatActivity() {
 
     private fun getEditProfile(){
         userGeneral.observe(this, { userGeneral ->
-           // binding.idName.text = userGeneral.username
+            binding.idName.text = userGeneral.username
             //        binding.idDesc.text = userGeneral.shortDescription
 
         })
