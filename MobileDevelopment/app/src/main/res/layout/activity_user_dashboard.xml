@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".company.CompanyDashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_blue"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="490dp"
+            android:layout_marginEnd="390dp"
+            android:fontFamily="@font/montserratblack"
+            android:text="Pathway"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <ImageButton
+            android:id="@+id/btn_user_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/person"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_recommended_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recommended_courses"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratblack"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/linear_course"/>
+
+    <LinearLayout
+        android:id="@+id/linear_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_recommended_courses"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_item_list">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recommended_courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/item_list_recommended_courses">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_job_openings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/job_openings"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratblack"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toEndOf="@id/tv_recommended_courses"
+        app:layout_constraintBottom_toTopOf="@id/rv_job_openings"/>
+
+    <LinearLayout
+        android:id="@+id/rv_job_openings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_job_openings"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_item_list">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_job_opening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/item_list_job_openings">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

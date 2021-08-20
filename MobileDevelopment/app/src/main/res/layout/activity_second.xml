@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeginActivity">
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_do_you_want_to_learn_first"
+        android:fontFamily="@font/montserratblack"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_a_learning_pathway_to_begin"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_one"
+        android:layout_marginTop="30dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_one"
+        android:layout_width="550dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/data_scientist"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/tv_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_two"
+        android:layout_width="550dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/web_developer"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btn_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_three"
+        android:layout_width="550dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/machine_learning_engineer"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btn_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintTop_toBottomOf="@+id/btn_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_four"
+        android:layout_width="550dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/i_m_not_sure"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/tv_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/learning_pathways_are_selections_of_courses_tied_together_for_learners_to_progress_through"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_four" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserratblack"
+        android:text="@string/introduce_yourself"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_introduce"
+        android:layout_width="1200dp"
+        android:layout_height="450dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        tools:text="@tools:sample/lorem/random"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:scrollbars = "vertical"
+        android:background="@drawable/custom_button"/>
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/inputLayout"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_one"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/btn_submit">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/edDescribeYourself"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:text="@tools:sample/lorem/random" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_width="550dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_btn"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_introduce"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

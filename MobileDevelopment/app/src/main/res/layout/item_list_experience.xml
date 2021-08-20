@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="470dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/custom_item_list">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_recommended_people"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF909090" />
+
+
+    <TextView
+        android:id="@+id/txt_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/img_recommended_people"
+        android:text="@string/python_programming"
+        android:fontFamily="@font/montserratblack"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_experience"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/img_recommended_people"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/data_camp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_company_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/img_recommended_people"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="MM YYYY - MM YYYY"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/txt_company_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/img_recommended_people"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat"/>
+
+</RelativeLayout>

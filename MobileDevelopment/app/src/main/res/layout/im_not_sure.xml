@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_your_learning_pathway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/montserratblack"
+        android:text="@string/your_learning_pathway_is"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pathway"
+        android:layout_width="550dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_btn"
+        android:fontFamily="@font/montserrat"
+        tools:text="@string/data_scientist"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_your_learning_pathway"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/back"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserratblack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pathway"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_btn_grey"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserratblack"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

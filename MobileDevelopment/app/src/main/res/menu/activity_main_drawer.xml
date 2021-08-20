@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_pathway"
+            android:icon="@drawable/ic_baseline_library_books_24"
+            android:title="@string/pathway" />
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/ic_baseline_forum_24"
+            android:title="@string/forum" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/nav_settings"
+                android:title="@string/settings_and_privacy" />
+            <item
+                android:id="@+id/nav_help_center"
+                android:title="@string/help_center" />
+        </menu>
+    </item>
+</menu>

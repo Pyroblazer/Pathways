@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Pathway</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="name">Name</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="reenter_password">Re-enter your password</string>
+    <string name="looking_to_hire">I am looking to hire</string>
+    <string name="create_account">Create Account</string>
+    <string name="have_an_account">I already have an account</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login">Login</string>
+    <string name="dont_have_an_account">I don\'t have an account</string>
+    <string name="submit">Submit</string>
+    <string name="describe_yourself">Describe yourself…</string>
+    <string name="introduce_yourself">Introduce yourself and we\'ll recommend a learning pathway based on you</string>
+    <string name="your_learning_pathway_is">Your learning pathway is</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="pathway">Pathway</string>
+    <string name="we_ll_ask_a_few_questions_to_personalize_your_learning_experience">We\'ll ask a few questions to personalize your learning experience</string>
+    <string name="what_do_you_want_to_learn_first">What do you want to learn first?</string>
+    <string name="pick_a_learning_pathway_to_begin">Pick a learning pathway to begin</string>
+    <string name="data_scientist">Data Scientist</string>
+    <string name="web_developer">Web Developer</string>
+    <string name="machine_learning_engineer">Machine Learning Engineer</string>
+    <string name="or">OR</string>
+    <string name="i_m_not_sure">I\'m not sure</string>
+    <string name="learning_pathways_are_selections_of_courses_tied_together_for_learners_to_progress_through">Learning pathways are selections of courses tied together for learners to progress through</string>
+    <string name="get_started">Get Started</string>
+    <string name="your_app_has_been_deployed">Your app has been deployed</string>
+    <string name="click_here_to_access_your_app">Click here to access your app</string>
+    <string name="dummy_url">http://gaesamplesite.appspot.com/</string>
+    <string name="your_app_has_been_submitted">Your app has been submitted</string>
+    <string name="return_to_job_description">Return to Job Description</string>
+    <string name="current_path">Current Path</string>
+    <string name="profile">Profile</string>
+    <string name="forum">Forum</string>
+    <string name="settings_and_privacy">Settings and Privacy</string>
+    <string name="help_center">Help Center</string>
+    <string name="task">Task</string>
+    <string name="code">Code</string>
+    <string name="_55_55_55">55:55:55</string>
+    <string name="run_code">Run Code</string>
+    <string name="task_title_lorem_ipsum_dolor_sit_amet_consectetur">Task Title Lorem ipsum dolor sit amet, consectetur</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="answer">Answer</string>
+    <string name="your_answer_has_been_submitted">Your answer has been submitted</string>
+    <string name="you_have_completed_the_interview">You have completed the interview</string>
+    <string name="what_is_your_understanding_and_experience_with_object_oriented_programming_oop">What is your understanding and experience with object-oriented programming (OOP)?</string>
+    <string name="start_recording">Start recording</string>
+    <string name="dummyname">John Doe</string>
+    <string name="recommended_people">Recommended People</string>
+    <string name="company_name">Company Name</string>
+    <string name="jakarta_indonesia">Jakarta, Indonesia</string>
+    <string name="_8_000_000_00_12_000_000_00_idr_month">8,000,000.00–12,000,000.00 IDR/ month</string>
+    <string name="job_openings">Job Openings</string>
+    <string name="add">Add</string>
+    <string name="recommended_courses">Recommended Courses</string>
+    <string name="python_programming">Python Programming</string>
+    <string name="data_camp">Data Camp</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a venenatis diam. Curabitur vehicula dictum euismod. Etiam eget nisi in orci vulputate eleifend. Aenean tincidunt, ligula sit amet ullamcorper faucibus, metus felis dignissim est, ut posuere tortor risus vitae augue. Quisque leo odio, placerat id euismod non, efficitur quis odio. Duis vitae risus mattis, lacinia leo vitae, mollis nibh. Nam aliquam finibus mauris, sit amet rutrum eros interdum at. Donec lobortis malesuada tellus, sed efficitur ipsum rhoncus sit amet.</string>
+    <string name="john_doe_lorem_ipsum_dolor_sit_amet">John Doe Lorem ipsum dolor sit amet</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="Task_Type">
+        <item>Tecnical Mini-Project</item>
+        <item>Tecnical Quiz</item>
+        <item>Behavioral Video Test</item>
+    </string-array>
+
+</resources>

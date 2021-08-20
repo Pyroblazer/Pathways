@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user.UserProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_blue"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="490dp"
+            android:layout_marginEnd="390dp"
+            android:fontFamily="@font/montserratblack"
+            android:text="Pathway"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <ImageButton
+            android:id="@+id/btn_user_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/logout"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_company_user_profile"
+        android:layout_width="990dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/custom_btn"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/img_company_user_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/user"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_general_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserratblack"
+                android:text="@string/john_doe_lorem_ipsum_dolor_sit_amet"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_short_desc_user_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/custom_btn"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserratblack"
+            android:background="@drawable/custom_btn"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/ll_company_user_profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserratblack"
+                android:textSize="35sp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Interest"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:fontFamily="@font/montserratblack"-->
+        <!--                android:textSize="35sp"-->
+        <!--                android:textAlignment="textStart"-->
+        <!--                android:textColor="@color/black" />-->
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed Task"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserratblack"
+                android:textSize="35sp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/ly_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="60dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:listitem="@layout/item_list_experience">
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <ScrollView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center_horizontal">-->
+
+        <!--                <androidx.recyclerview.widget.RecyclerView-->
+        <!--                    android:id="@+id/rv_interest"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--                    tools:listitem="@layout/item_list_interest">-->
+        <!--                </androidx.recyclerview.widget.RecyclerView>-->
+        <!--            </ScrollView>-->
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_completed_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:listitem="@layout/item_list_completed_task">
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

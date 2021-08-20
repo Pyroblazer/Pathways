@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.stefanny.pathway">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pathway"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ui.job.AddJobOpeningCompany" />
+        <activity android:name=".company.CompanyUserProfile" />
+        <activity android:name=".ui.profile.AddExperience" />
+        <activity android:name=".ui.profile.EditExperience" />
+        <activity android:name=".user.UserProfile" />
+        <activity android:name=".ui.job.AddTaskJobDescriptionCompany" />
+        <activity android:name=".ui.job.EditJobDescriptionCompany" />
+        <activity android:name=".ui.job.EditTaskJobDescriptionCompany" />
+        <activity android:name=".ui.job.JobDescriptionCompany" />
+        <activity android:name=".InterviewTestActivity" />
+        <activity android:name=".preliminary.PreliminaryTechnicalTest" />
+        <activity android:name=".miniproject.MiniProjectActivity" />
+        <activity android:name=".ui.profile.EditProfileActivity" />
+        <activity android:name=".ui.job.JobDescriptionUser" />
+        <activity android:name=".BeginActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".user.UserDashboard" />
+        <activity android:name=".company.CompanyDashboard" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:theme="@style/Theme.Pathway.NoActionBar"/>
+        <activity android:name=".WelcomePage" />
+        <activity android:name=".SplashScreenActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
